@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    background-image:url('images/background.png');
+    background-size:auto;
+}
+@media  (min-width:768px){
+    /*总元素-手机样式*/
+/*总元素*/
+.calendar{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    width:36em;
+    height:36em;
+    background-color:rgba(0,0,0,.8);
+    color:white;
+
+}
+
+}
+
+@media (max-width:767px){
+    /*总元素-手机样式*/
+    .calendar{
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        margin:auto;
+        width:100%;
+        height:auto;
+        background-color:rgba(0, 0, 0, 0.8);
+        color:white;
+
+    }
+}
+
+/*标题*/
+.calendar-title-box{
+    position:relative;
+    width: 100%;
+    height: 4em;
+    padding:0 10px 0 10px;
+    font-size:1.25em;
+    line-height:4em;
+    text-align:center;
+}
+/*口算底色*/
+.calendar-title-box-sums{
+    position:relative;
+    width: 100%;
+    height: 2em;
+    padding:0 10px 0 10px;
+    font-size:1.25em;
+    line-height:2em;
+    text-align:center;
+    background-color:rgba(102, 160, 51, 0.8);
+
+}
+.date-title{
+    font-size:2em;
+}
+
+.prevMonth{
+    display:block;
+    float:left;
+    cursor:pointer;
+}
+
+.nextMonth{
+    display:block;
+    float:right;
+    cursor:pointer;
+
+}
+/*算术*/
+.sums-title{
+    font-size:2em;
+}
+
+.prevSums{
+    display:block;
+    float:left;
+    cursor:pointer;
+}
+/*倒计时*/
+.prevSums_count{
+    display:block;
+    float:left;
+    cursor:pointer;
+    color: rgb(250, 221, 6);
+}
+
+#select_1,#select_2{
+    height:2em;
+}
+
+.nextSums{
+    display:block;
+    float:right;
+    cursor:pointer;
+    color: white;
+
+    background-color:red;
+    
+    text-align:center;
+    line-height:2em;
+    border-radius:0.5em;
+}
+
+.nextSums:hover{
+    display:block;
+    float:right;
+    cursor:pointer;
+    color: white;
+
+    background-color:rgb(60, 11, 196);
+    
+    text-align:center;
+    line-height:2em;
+    border-radius:0.5em;
+}
+.nextSums.nextSums:active{
+    display:block;
+    float:right;
+    cursor:pointer;
+    color: white;
+
+    background-color:rgb(216, 226, 16);
+    transform: scale(0.98);
+    text-align:center;
+    line-height:2em;
+    border-radius:0.5em;
+}
+
+.nextSums_count{
+    display:block;
+    float:right;
+    cursor:pointer;
+    color: rgb(14, 242, 242);
+
+}
+
+/*表格*/
+.calendar-table{
+    width:100%;
+    height:calc(100% - 12em);
+    border-collapse:collapse;
+    text-align:center;
+}
+
+.calendar-table tr{
+    line-height:2em;
+    cursor:pointer;
+}
+
+.title-tr{
+    color:black;
+    background-color: #eee;
+}
+
+.calendar-table td:hover{
+    transform: scale(1.3);
+    transition: .3s ease;
+    color:black;
+    background-color: #eee;
+}
+
+/*当前天*/
+.toDay{
+    color:red;
+    transform:scale(1.5);
+}
+
+/*当前月*/
+.thisMonth{
+    color: white;
+    font-weight:bolder;
+}
+
+/*其他月*/
+.otherMonth{
+    color:darkgray;
+}

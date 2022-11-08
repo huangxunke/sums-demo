@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content = "width=device-width, initial-scale=1">
+        <title>口算练习</title>
+        <link rel="stylesheet" href="static/index.css">
+    </head>
+    <body>
+        
+    
+    
+    <!--日历总元素-->
+    <div class="calendar">          
+		   
+		   <!--增加的口算显示题-->
+       
+			<div class="calendar-title-box-sums">
+                <span class="prevSums">
+                    间隔：
+					<select name="select_1" id="select_1">
+						<option value="1000">1秒</option>
+						<option value="2000">2秒</option>
+						<option value="3000" selected="selected">3秒</option>
+						<option value="4000">4秒</option>
+						<option value="5000">5秒</option>
+					</select>
+				</span>	
+                <span >
+                    模式：
+                    <select name="select_2" id="select_2">
+						<option value="1">10以内加法</option>
+						<option value="2">10以内减法</option>
+						<option value="3" selected="selected">10以内加减法</option>
+						<option value="4">20以内加法</option>
+						<option value="5">20以内减法</option>
+						<option value="6">20以内加减法</option>
+                        <option value="7">50以内加法</option>
+						<option value="8">50以内减法</option>
+						<option value="9">50以内加减法</option>
+                        <option value="10">100以内加法</option>
+						<option value="11">100以内减法</option>
+						<option value="12">100以内加减法</option>
+					</select>
+				
+                </span>
+                <span class="nextSums" >开始</span>
+            </div>
+            <div class="calendar-title-box-sums">
+                <span class="prevSums_count">
+                   倒计时
+				</span>	
+                <span class="sums-title">口算练习</span>
+                <span class="nextSums_count">计时</span>
+            </div>
+		   <!--标题-->
+            <div class="calendar-title-box">
+                <span class="prevMonth">上一月</span>
+                <span class="date-title">2022年05月</span>
+                <span class="nextMonth">下一月</span>
+            </div>
+            <table class="calendar-table">
+                <tbody>
+                    <tr class="title-tr">
+                        <th>日</th>
+                        <th>一</th>
+                        <th>二</th>
+                        <th>三</th>
+                        <th>四</th>
+                        <th>五</th>
+                        <th>六</th>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="static/index.js"></script>
+    </body>
+</html>
